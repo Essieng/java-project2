@@ -5,6 +5,6 @@ import java.util.Scanner;
 public class ScannerExTest {
     public static void main(String[] args) {
         ScannerEx se = new ScannerEx();
-        se.plusTwoNumbers(30,40);
+        se.plusTwoNumbers(1, 2);
     }
 }
