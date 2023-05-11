@@ -1,16 +1,19 @@
 package com.example.javaproject2.week4.day15;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserTest {
     public static void main(String[] args) {
-        User user1 = new User();
-        user1.name = "김미미";
-        user1.age = 14;
+        List<User> users = new ArrayList<>();
 
-        User user2 = new User();
-        user2.name = "김나나";
-        user2.age = 37;
+        User user1 = new User("김미미","010-1111-1111",14);
+        users.add(user1);
 
-        System.out.printf("%s는 성인입니까? %s\n", user1.name, user1.isAdult());
-        System.out.printf("%s는 성인입니까? %s\n", user2.name, user2.isAdult());
+        User user2 = new User("김나나", "010-2222-2222", 37);
+        users.add(user2);
+
+        System.out.printf("%s는 성인입니까? %s\n", user1.getName(), user1.isAdult());
+        System.out.printf("%s는 성인입니까? %s\n", user2.getName(), user2.isAdult());
     }
 }
